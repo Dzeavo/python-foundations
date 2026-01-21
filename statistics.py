@@ -1,3 +1,12 @@
+from typing import List, Tuple
+
+def basic_stats(numbers: List[float]) -> Tuple[float, float, float]:
+    ...
+
+
+
+
+
 def basic_stats(numbers):
     if not numbers:
         raise ValueError("List of numbers cannot be empty")
