@@ -1,4 +1,7 @@
 def basic_stats(numbers):
+    if not numbers:
+        raise ValueError("List of numbers cannot be empty")
+
     total = 0
     count = 0
 
@@ -18,7 +21,3 @@ def basic_stats(numbers):
     mean = total / count
 
     return mean, minimum, maximum
-
-
-data = [10, -5, 3, 7, 0]
-print(basic_stats(data))
