@@ -4,7 +4,7 @@ import pandas as pd
 def table_stats_filtered(path: str) -> Tuple[float, float, float]:
     df = pd.read_csv(path)
 
-    # фильтруем: только люди старше 30
+    
     filtered_df = df[df["age"] > 30]
 
     mean_salary = filtered_df["salary"].mean()
